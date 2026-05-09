@@ -96,12 +96,6 @@ tool_timeout_sec = 120
 - `inspect_pdh_data`: summarize retrieved rows.
 - `narrow_pdh_data`: filter retrieved rows in memory.
 
-## GitHub Traffic Tracking
-
-The repo includes `.github/workflows/collect-github-traffic.yml` and `scripts/collect_github_traffic.py`.
-
-It saves daily clone/view history, unique clone/view counts, popular path snapshots, and popular referrer snapshots. The workflow needs a `TRAFFIC_TOKEN` repository secret with access to GitHub traffic APIs.
-
 ## Web Research
 
 Web research is an analyst responsibility described in [`skills.md`](skills.md),
