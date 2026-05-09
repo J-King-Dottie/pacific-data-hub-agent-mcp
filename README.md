@@ -1,4 +1,4 @@
-# Pacific Data Hub MCP
+# Pacific Data Hub Agent MCP
 
 A small, general-purpose MCP server and analyst workflow for Pacific Data Hub
 (PDH.stat) data.
@@ -30,6 +30,23 @@ Start with these files:
 The intended agent flow is: search the PDH catalogue with FTS, inspect metadata
 and codelists, retrieve only relevant rows, check the latest available period,
 analyze the data, then produce one sourced PowerPoint deck.
+
+## Data Coverage
+
+The MCP works against the live PDH.stat SDMX catalogue from the Pacific Data Hub. It is general-purpose across PDH domains rather than energy-specific.
+
+Common discovery areas include:
+
+- energy, electricity, renewables, fuel imports, tariffs, access
+- trade, imports, exports, goods, services, food and commodity trade
+- national accounts, GDP, balance of payments, prices, inflation
+- population, labour, health, education, gender, WASH, agriculture, land
+- climate, disasters, environment, Blue Pacific 2050, SDG indicators
+- World Bank, ADB, Lowy aid finance, cyber, governance, digital adoption selections where PDH publishes them
+
+Useful query keywords:
+
+`Pacific Data Hub`, `PDH.stat`, `SPC`, `SDMX`, `Pacific islands`, `Fiji`, `Samoa`, `Tonga`, `Vanuatu`, `Solomon Islands`, `Kiribati`, `Tuvalu`, `Palau`, `Nauru`, `Niue`, `Cook Islands`, `Marshall Islands`, `Micronesia`, `Papua New Guinea`, `energy`, `electricity`, `renewable`, `fuel imports`, `trade`, `GDP`, `balance of payments`, `prices`, `population`, `SDG`, `health`, `education`, `climate`, `disasters`.
 
 ## Quick Start
 
@@ -76,6 +93,12 @@ tool_timeout_sec = 120
 - `retrieve_pdh_data`: retrieve SDMX CSV data and return rows directly.
 - `inspect_pdh_data`: summarize retrieved rows.
 - `narrow_pdh_data`: filter retrieved rows in memory.
+
+## GitHub Traffic Tracking
+
+The repo includes `.github/workflows/collect-github-traffic.yml` and `scripts/collect_github_traffic.py`.
+
+It saves daily clone/view history, unique clone/view counts, popular path snapshots, and popular referrer snapshots. The workflow needs a `TRAFFIC_TOKEN` repository secret with access to GitHub traffic APIs.
 
 ## Web Research
 

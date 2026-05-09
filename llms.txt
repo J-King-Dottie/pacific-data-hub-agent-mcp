@@ -1,0 +1,42 @@
+# Pacific Data Hub Agent MCP
+
+Pacific Data Hub Agent MCP is a general-purpose MCP server and analyst workflow for Pacific Data Hub PDH.stat SDMX data. It is designed for AI agents that need to search the live PDH catalogue, inspect metadata and codelists, retrieve valid data, and produce sourced analysis.
+
+Primary entrypoints:
+- README.md: project overview, data coverage, MCP quick start
+- skills.md: analyst instructions and PowerPoint report standards
+- AGENTS.md: development and architecture guidance
+- pacific_data/mcp_server.py: MCP tool surface
+- pacific_data/pdh_client.py: PDH.stat SDMX client and live catalogue FTS
+- pacific_data/pptx_report.py: native editable PowerPoint chart deck helper
+
+Core MCP tools:
+- search_pdh_catalog
+- get_pdh_metadata
+- get_pdh_codelist
+- retrieve_pdh_data
+- inspect_pdh_data
+- narrow_pdh_data
+
+Data coverage:
+- Live PDH.stat catalogue from Pacific Data Hub / SPC
+- Pacific island countries and territories
+- Energy, electricity, renewables, fuel imports, tariffs, access
+- Trade, imports, exports, goods, services, food and commodity trade
+- National accounts, GDP, balance of payments, prices, inflation
+- Population, labour, health, education, gender, WASH, agriculture, land
+- Climate, disasters, environment, Blue Pacific 2050, SDG indicators
+- Selected World Bank, ADB, Lowy aid finance, cyber, governance and digital adoption datasets where PDH publishes them
+
+Agent flow:
+question -> write better FTS catalogue queries -> shortlist live PDH dataflows -> inspect metadata/codelists -> retrieve valid SDMX slices -> inspect rows -> analyze latest relevant data -> produce one sourced PowerPoint deck when reporting.
+
+Important caveats:
+- The MCP is a data surface, not a topic-specific report route.
+- Search shortlists are candidate pools; the AI analyst chooses relevant datasets.
+- Retrieved evidence should not be persisted by default.
+- The only runtime cache should be the PDH dataflows XML cache.
+- For current questions, prefer latest available data and avoid stale charts unless clearly labelled structural context.
+
+Useful keywords:
+Pacific Data Hub, PDH.stat, SPC, SDMX, MCP, AI agent, Pacific islands, Fiji, Samoa, Tonga, Vanuatu, Solomon Islands, Kiribati, Tuvalu, Palau, Nauru, Niue, Cook Islands, Marshall Islands, Micronesia, Papua New Guinea, energy, electricity, renewable, fuel imports, trade, GDP, balance of payments, population, SDG, health, education, climate, disasters.
