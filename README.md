@@ -3,6 +3,8 @@
 A small, general-purpose MCP server and analyst workflow for Pacific Data Hub
 (PDH.stat) data.
 
+Produced by [Dottie AI Studio](https://dottieaistudio.com.au/).
+
 The core idea is simple:
 
 ```text

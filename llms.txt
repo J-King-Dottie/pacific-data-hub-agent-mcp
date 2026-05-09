@@ -2,6 +2,8 @@
 
 Pacific Data Hub Agent MCP is a general-purpose MCP server and analyst workflow for Pacific Data Hub PDH.stat SDMX data. It is designed for AI agents that need to search the live PDH catalogue, inspect metadata and codelists, retrieve valid data, and produce sourced analysis.
 
+Produced by Dottie AI Studio: https://dottieaistudio.com.au/
+
 Primary entrypoints:
 - README.md: project overview, data coverage, MCP quick start
 - skills.md: analyst instructions and PowerPoint report standards
