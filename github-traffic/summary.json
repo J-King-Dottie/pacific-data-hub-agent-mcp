@@ -1,0 +1,34 @@
+{
+  "repo": "J-King-Dottie/pacific-data-hub-agent-mcp",
+  "collected_at": "2026-05-09T23:12:45Z",
+  "metrics": {
+    "clones": {
+      "days": 14,
+      "known_total_count": 0,
+      "known_sum_daily_uniques": 0,
+      "latest_github_rolling_count": 0,
+      "latest_github_rolling_uniques": 0,
+      "first_timestamp": "2026-04-26T00:00:00Z",
+      "last_timestamp": "2026-05-09T00:00:00Z"
+    },
+    "views": {
+      "days": 14,
+      "known_total_count": 0,
+      "known_sum_daily_uniques": 0,
+      "latest_github_rolling_count": 0,
+      "latest_github_rolling_uniques": 0,
+      "first_timestamp": "2026-04-26T00:00:00Z",
+      "last_timestamp": "2026-05-09T00:00:00Z"
+    }
+  },
+  "popular": {
+    "paths": {
+      "snapshots_rows": 0,
+      "latest": []
+    },
+    "referrers": {
+      "snapshots_rows": 0,
+      "latest": []
+    }
+  }
+}
