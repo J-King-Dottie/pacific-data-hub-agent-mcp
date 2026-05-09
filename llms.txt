@@ -8,6 +8,7 @@ Primary entrypoints:
 - README.md: project overview, data coverage, MCP quick start
 - skills.md: analyst instructions and PowerPoint report standards
 - AGENTS.md: development and architecture guidance
+- .mcp.json: project-scoped MCP server config
 - pacific_data/mcp_server.py: MCP tool surface
 - pacific_data/pdh_client.py: PDH.stat SDMX client and live catalogue FTS
 - pacific_data/pptx_report.py: native editable PowerPoint chart deck helper

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pacific_data": {
+      "command": "python",
+      "args": [
+        "-m",
+        "pacific_data.mcp_server"
+      ],
+      "cwd": "."
+    }
+  }
+}

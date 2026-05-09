@@ -8,9 +8,10 @@ Produced by [Dottie AI Studio](https://dottieaistudio.com.au/).
 The core idea is simple:
 
 ```text
-question -> AI-written FTS shortlist queries over the full live PDH catalog
--> inspect SDMX structure -> retrieve real data in memory -> analyze
--> write one sourced PowerPoint deck
+question -> AI-written FTS queries over the full live PDH catalog
+-> shortlist candidates -> pick relevant data -> inspect SDMX structure
+-> retrieve real data -> inspect/narrow rows -> analyze
+-> write one sourced PowerPoint deck when reporting
 ```
 
 The MCP is intentionally data-source focused: it retrieves the live PDH.stat
@@ -26,12 +27,14 @@ Start with these files:
 
 - [`skills.md`](skills.md): how to behave as the analyst using PDH data.
 - [`AGENTS.md`](AGENTS.md): how the project is structured and how to extend it.
+- [`.mcp.json`](.mcp.json): project-scoped MCP config.
 - [`pacific_data/mcp_server.py`](pacific_data/mcp_server.py): the MCP tool surface.
 - [`pacific_data/pptx_report.py`](pacific_data/pptx_report.py): optional PowerPoint deck helper.
 
-The intended agent flow is: search the PDH catalogue with FTS, inspect metadata
-and codelists, retrieve only relevant rows, check the latest available period,
-analyze the data, then produce one sourced PowerPoint deck.
+The intended agent flow is: write better FTS queries, search the PDH catalogue,
+pick relevant data, inspect metadata and codelists, retrieve real rows, inspect
+and narrow the data, analyze the evidence, then produce one sourced PowerPoint
+deck when reporting.
 
 ## Data Coverage
 
@@ -57,6 +60,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+Example project MCP config is also provided in [`.mcp.json`](.mcp.json).
 
 Run the MCP server:
 

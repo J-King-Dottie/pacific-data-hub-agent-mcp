@@ -8,6 +8,27 @@ This project is a general-purpose Pacific Data Hub research tool.
 - `pacific_data/pdh_client.py` contains PDH.stat API, SDMX mechanics, the dataflow XML cache, and the in-memory SQLite FTS index built from the live PDH dataflow catalog.
 - `pacific_data/pptx_report.py` provides generic PowerPoint deck rendering from analyst-selected slides using native editable charts.
 - `skills.md` is the single source of truth for analyst behavior, deck standards, chart-selection rules, web-research expectations, and PowerPoint output expectations.
+- `.mcp.json` is the project-scoped MCP configuration for agents that clone the repo.
+
+## Product Shape
+
+Keep the same broad shape as the Aus Data Agent MCP:
+
+```text
+README.md -> agent entrypoint and quick start
+AGENTS.md -> project architecture and development guardrails
+skills.md -> analyst behavior and evidence standards
+.mcp.json -> MCP wiring for agents
+MCP server -> source-specific data capabilities
+```
+
+The common workflow is:
+
+```text
+user question -> AI-written FTS queries -> catalogue shortlist
+-> AI picks relevant data -> inspect metadata/structure
+-> retrieve real data -> inspect/narrow data -> analyze from evidence
+```
 
 ## Development Rules
 
